@@ -1,0 +1,43 @@
+body {
+    background-color: beige; /* Fond de la page */
+}
+
+#quiz-container {
+    margin: 20px; /* Marge autour du conteneur principal */
+}
+
+#question-container {
+    background-color: white; /* Fond des questions */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+#button-container button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Couleur verte pour les boutons */
+    color: white;
+    cursor: pointer;
+}
+
+#result-container {
+    background-color: white; /* Fond du conteneur des résultats */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#result-table th, #result-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}

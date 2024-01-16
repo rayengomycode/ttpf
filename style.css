@@ -1,0 +1,291 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        max-height: 100vh;
+        background-color: #1F252E;
+    }
+
+    /*nav */
+    header {
+        padding: 1.7rem 1rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+        margin: auto;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+
+    .logo a {
+        color: #00E8F8;
+        text-decoration: none;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: .97rem;
+        font-weight: 600;
+        letter-spacing: .7px;
+        padding: 1rem;
+        padding: 0.4rem 1rem;
+    }
+
+    nav a.active,
+    nav a:hover {
+        color: #00E8F8;
+        border-radius: 1rem;
+        transition: all.3s ease-in-out;
+    }
+
+    #click {
+        display: none;
+    }
+
+    .menu i {
+        color: #00E8F8;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /* Nav */
+
+    section {
+        margin: 2rem 8.5rem;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5rem auto;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .main p {
+        margin-top: 1rem;
+        font-size: .98rem;
+        color: #fff;
+    }
+
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.4rem;
+        margin-top: 1.7rem;
+    }
+
+    .social a {
+        color: #00E8F8;
+        font-size: 1rem;
+        border: 1.6px solid #00E8F8;
+        border-radius: 50%;
+        padding: .35rem;
+        text-align: center;
+        width: 26px;
+    }
+
+    .social a:hover {
+        color: #1F252E;
+        background-color: #00E8F8;
+        box-shadow: 0 0 20px #00E8F8;
+        transition: all .3s ease-in-out;
+    }
+
+    .main h1 span:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .main h1 span:nth-child(2) {
+        color: #00E8F8;
+    }
+
+    .images {
+        width: 528px;
+        height: 300px; 
+        background-size: cover;
+        
+
+    }
+    /*div rec*/
+    .rectangle-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin: 2rem 0;
+    }
+    
+    .rectangle {
+        width: 30%;
+        margin: 1rem;
+        padding: 1rem;
+        background-color: #ffffff;;
+        text-align: center;
+        box-shadow: 0px 0px 10px 0px #000000;
+        border-radius: 15px; /* Add rounded corners to each rectangle */
+    }
+    
+    .rectangle img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .rectangle p {
+        margin: 1rem 0;
+        text-transform: uppercase;
+        font-size:25px; /* Augmenter la taille du paragraphe */
+        animation: textAnimation 1s ease-in-out infinite; /* Ajouter une animation */
+    }
+    
+    /* Ajouter une animation pour le texte */
+    @keyframes textAnimation {
+        0%, 100% {
+            transform: translateY(0); /* Aucun mouvement au début et à la fin de l'animation */
+        }
+        50% {
+            transform: translateY(-5px); /* Léger mouvement vers le haut à mi-chemin de l'animation */
+        }
+    }
+    
+    .rectangle button {
+        background-color: #1F252E;
+        color: #00E8F8;
+        padding: 0.8rem 1.5rem; /* Augmenter la taille du bouton */
+        border: none;
+        border-radius: 20px; /* Ajouter un rayon aux coins */
+        cursor: pointer;
+        font-size: 1.2rem; /* Modifier la taille de la police */
+    }
+    
+    .rectangle button:hover {
+        background-color: #1F252E;
+        /* Autres styles pour le survol si nécessaire */
+    }
+    
+    /**/
+    .contact-container {
+        background-color: #ffffff; /* White background */
+        color: #000000; /* Black text color */
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #dddddd;
+    }
+    
+    h2 {
+        color: #1F252E; 
+    }
+    
+    .contact-form {
+        max-width: 600px;
+        margin: auto;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #dddddd;
+        border-radius: 10px;
+    }
+    
+    button {
+        background-color: #1F252E;
+        color: #ffffff;
+        padding: 10px 15px;
+        margin-left:  45%;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #1F252E; /* Darker blue on hover */
+    }
+    
+    footer {
+        background-color: #ffffff; /* White background */
+        color: #1F252E; /* Blue text color */
+        text-align: center;
+        padding: 20px; /* Add padding for better visual appearance */
+        border-top: 1px solid #ddd; /* Add a border to separate from the main content */
+        margin-top: 20px; /* Add space between the content and the footer */
+    }
+    
+
+
+    /* @keyframes check {
+        0% {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    } */
+
+    @media only screen and (max-width:480px) {
+        .menu {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #244D61;
+        }
+
+        header {
+            padding: 0.7rem 1rem;
+            align-items: center;
+            max-width: 100%;
+        }
+
+        nav {
+            position: absolute;
+            display: grid;
+            top: 75px;
+            text-align: center;
+            background-color: #1F252E;
+            left: -100%;
+            z-index: 1;
+            width: 100%;
+        }
+
+        #click:checked~nav {
+            left: 0%;
+            transition: all 0.3s ease;
+        }
+
+        section {
+            margin: 1rem 1.5rem;
+        }
+    }

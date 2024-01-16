@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/quiz.css">
+    <link rel="icon" href="../images/Logo.png" type="image/png"> 
+    <title>Quiz sur l'histoire du Real Madrid</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <h1>Quiz sur l'histoire du Real Madrid</h1>
+    <div id="question-container"></div>
+    <div id="button-container">
+        <button onclick="prevQuestion()">Back</button>
+        <button onclick="nextQuestion()">Next</button>
+        <button onclick="finishQuiz()">Terminer</button>
+    </div>
+</div>
+
+<div id="result-container" style="display:none;">
+    <h2>Résultats du Quiz</h2>
+    <table id="result-table">
+        <!-- Le tableau des résultats sera affiché ici -->
+    </table>
+</div>
+
+<script src="../js/quiz.js"></script>
+
+</body>
+</html>

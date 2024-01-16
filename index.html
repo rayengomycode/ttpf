@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/Logo.png" type="image/png"> 
+    <title>Rayen|MR</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="images/Logo.png" alt="" style="height: 60px;width:60px;"></a>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="mainicon">
+            <div class="menu">
+                <i class="bi bi-list"></i>
+            </div>
+        </label>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="./autrespages/skills.html">Skills</a>
+            <a href="autrespages/quiz.html">Quiz</a>
+            <a href="#contactForm" onclick="scrollToContact()">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="main">
+            <div class="detail">
+                <h1><span>Hi, It's Me</span> <br> I'm <span style="color:#00E8F8;">Rayen</span></h1>
+                <p>I am a student at the International Institute of Technology <br> Specialty : Software Engineering   </p>
+                <div class="social">
+                    <a href="https://github.com/rayengomycode"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/realmadrid/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/primatec-engineering/?originalSubdomain=tn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.facebook.com/RealMadrid"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+            <div class="images">
+                <img src="images/image1.png" alt="" style="height: 350px;border-radius: 15px;float:right;margin-right: 10%;width: 250px;">
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="rectangle-container">
+        <!-- First Rectangle -->
+        <div class="rectangle">
+            <img src="images/Academic_Background.png" alt="Image 1" style="height: 200px;width: 200px;">
+            <p>Academic Background</p>
+            <a href="autrespages/Parcoursc.html"><button>SEE MORE</button></a>
+        </div>
+
+        <!-- Second Rectangle -->
+        <div class="rectangle">
+            <img src="images/computer_skills.png" alt="Image 2" style="height: 200px;width: 200px;">
+            <p>computer skills</p>
+            <a href="./autrespages/skills.html"><button>SEE MORE</button></a>
+        </div>
+
+        <!-- Third Rectangle -->
+        <div class="rectangle">
+            <img src="images/internships and professional experiences.png" alt="Image 3" style="height: 200px;width: 200px;">
+            <p>professional experiences</p>
+            <a href="./autrespages/experience.html"><button>SEE MORE</button></a>
+        </div>
+        
+        
+
+        <!-- Add more rectangles as needed -->
+    </div>
+    <br>
+    <div class="rectangle-container">
+        <!-- First Rectangle -->
+        <div class="rectangle">
+            <img src="images/scientific_events-removebg-preview.png" alt="Image 1" style="height: 200px;width: 200px;">
+            <p>scientific events</p>
+            <a href="./autrespages/event.html"><button>SEE MORE</button></a>
+        </div>
+
+        <!-- Second Rectangle -->
+        <div class="rectangle">
+            <img src="images/subjects_studied-removebg-preview.png" alt="Image 2" style="height: 200px;width: 200px;">
+            <p>subjects studied</p>
+            <a href="autrespages/matiere.html"><button>SEE MORE</button></a>
+        </div>
+
+        <!-- Third Rectangle -->
+        <div class="rectangle">
+            <img src="images/passions_sport_et_qualités-removebg-preview.png" alt="Image 3" style="height: 200px;width: 200px;">
+            <p>passions sport et qualités</p>
+            <a href="./autrespages/passion.html"><button>SEE MORE</button></a>
+        </div>
+        
+        
+
+        <!-- Add more rectangles as needed -->
+    </div>
+
+    <div class="contact-container" id="contactForm">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RMR. All rights reserved.</p>
+    </footer>
+    <!-- At the end of your HTML, before the closing </body> tag -->
+    <script>
+        function scrollToContact() {
+            var contactForm = document.getElementById("contactForm");
+            contactForm.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+
+</body>
+
+</html>
